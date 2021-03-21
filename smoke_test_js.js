@@ -13,11 +13,11 @@ testing https://jsonplaceholder.typicode.com
 
 // test for GET /posts?userId=<id>&title=<title>
 
-const server = 'https://jsonplaceholder.typicode.com';
-const userId = 2;
-const title = 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit';
-const endpoint = `/posts?userId=${userId}&title=${title}`
-const assert = require('assert')
+let server = 'https://jsonplaceholder.typicode.com';
+let userId = 1;
+let title = 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit';
+let endpoint = `/posts?userId=${userId}&title=${title}`
+let assert = require('assert')
 
 testCase('Smoke-test', function(){
       it('responds with code 200', (done) => {
